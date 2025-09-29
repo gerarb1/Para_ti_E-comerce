@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Choco Tienda</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>🍫 Bienvenido a Chocolates Para Ti</h1>
+        <nav>
+            <a href="/productos/">Productos</a> |
+            <a href="/usuarios/">Usuarios</a> |
+            <a href="/pedidos/">Pedidos</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>© 2025 Chocolates Para Ti</p>
+    </footer>
+</body>
+</html>
